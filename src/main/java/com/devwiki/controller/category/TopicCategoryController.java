@@ -35,4 +35,9 @@ public class TopicCategoryController {
     public ResponseVo updateTopicCategory(@RequestBody() TopicCategoryUpdateRequest request) {
         return topicCategoryService.updateTopicCategory(request);
     }
+
+    @DeleteMapping("/delete/{id}")
+    public ResponseVo deleteTopicCateogry(@PathVariable("id") long topic_category_id) {
+        return topicCategoryService.deleteTopicCategory(topic_category_id);
+    }
 }

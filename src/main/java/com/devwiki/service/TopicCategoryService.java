@@ -57,4 +57,13 @@ public class TopicCategoryService {
 
         return new ResponseVo(Status.SUCCESS);
     }
+
+    public ResponseVo deleteTopicCategory(long topic_category_id) {
+        TopicCategory topicCategory = topicCategoryRepository.findById(topic_category_id)
+                .get();
+
+        topicCategoryRepository.delete(topicCategory);
+
+        return new ResponseVo(Status.SUCCESS);
+    }
 }
