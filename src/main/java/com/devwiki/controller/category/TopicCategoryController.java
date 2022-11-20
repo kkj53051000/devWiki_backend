@@ -1,6 +1,7 @@
 package com.devwiki.controller.category;
 
 import com.devwiki.request.TopicCategoryRequest;
+import com.devwiki.request.TopicCategoryUpdateRequest;
 import com.devwiki.response.TopicCategoryListResponse;
 import com.devwiki.response.TopicCategoryResponse;
 import com.devwiki.service.TopicCategoryService;
@@ -28,5 +29,10 @@ public class TopicCategoryController {
     @GetMapping("/getall")
     public TopicCategoryListResponse getAllTopicCategory() {
         return topicCategoryService.getAllTopicCategory();
+    }
+
+    @PostMapping("/update")
+    public ResponseVo updateTopicCategory(@RequestBody() TopicCategoryUpdateRequest request) {
+        return topicCategoryService.updateTopicCategory(request);
     }
 }
