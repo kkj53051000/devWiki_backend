@@ -9,6 +9,4 @@ public class DevWikiApplication {
     public static void main(String[] args) {
         SpringApplication.run(DevWikiApplication.class, args);
     }
-
-//    Merge Test
 }

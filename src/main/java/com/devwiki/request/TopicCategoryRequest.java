@@ -3,7 +3,7 @@ package com.devwiki.request;
 import lombok.Getter;
 
 @Getter
-public class CategoryRequest {
+public class TopicCategoryRequest {
     private String name;
 
 }

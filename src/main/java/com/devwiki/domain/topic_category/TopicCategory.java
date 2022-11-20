@@ -1,4 +1,4 @@
-package com.devwiki.domain.category;
+package com.devwiki.domain.topic_category;
 
 import com.devwiki.domain.user.User;
 import lombok.AllArgsConstructor;
@@ -12,11 +12,11 @@ import java.time.LocalDateTime;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Category {
+public class TopicCategory {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "category_id")
+    @Column(name = "topic_category_id")
     private Long id;
 
     private String name;
