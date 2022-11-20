@@ -14,7 +14,7 @@ public class TopicCategoryService {
 
     private final TopicCategoryRepository categoryRepository;
 
-    public ResponseVo addCategory(TopicCategoryRequest request) {
+    public ResponseVo addTopicCategory(TopicCategoryRequest request) {
         TopicCategory category = TopicCategory.builder()
                 .name(request.getName())
                 .build();
